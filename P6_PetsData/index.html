@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        form{
+            padding: 3%;
+            text-align: center;
+        }
+        label{
+            color:brown;
+        }
+    </style>
+    <script>
+        function display(){
+            var pet={};
+            var input_fields=document.getElementsByTagName('input');
+            for(var i=0; i<input_fields.length; i++){
+                pet[input_fields[i].name]=input_fields[i].value;
+            }
+            alert(JSON.stringify(pet));
+            console.log(pet);
+            //document.getElementById("h").innerHTML=pet;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="pname">Pet's name:</label> <br>
+        <input type="text" name="name"> <br><br>
+        <label for="page">Pet's age:</label> <br>
+        <input type="number" name="age"> <br><br>
+        <label for="pweight">Pet's Weight:</label><br>
+        <input type="number" name="weight"> <br><br>
+        <label for="ptype">Pet's type:</label><br>
+        <input type="text" name="type"> <br><br>
+        <label for="plike">Pet's likes:</label><br>
+        <input type="text" name="likes"> <br><br>
+        <input type="submit" onclick="display();return false">
+    </form>
+    <h3 id="h"></h3>
+</body>
+</html>

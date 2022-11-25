@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button{
+    height:30px;
+    width:50px;
+}
+    </style>
+    <title>Practical_6</title>
+</head>
+<body>
+    <p id="ptag">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugiat esse
+         inventore. Omnis minus nostrum vel accusantium voluptate officia adipisci quaerat reiciendis optio 
+        facere cumque, ipsum beatae atque voluptatum recusandae porro similique
+         quis sit officiis consectetur? Aliquid officiis ab libero?
+    </p>
+        <button id="btn1" onclick="btnRed()">Red</button>
+        <button id="btn2" onclick="btnGreen()">Green</button>
+        <button id="btn3" onclick="btnBlue()">Blue</button>
+        <br>
+        <br>
+        <button id="btn4" onclick="btn10()">10</button>
+        <button id="btn5" onclick="btn20()">20</button>
+        <button id="btn6" onclick="btn30()">30</button>
+        <br>
+        <br>
+        <button id="btn7" onclick="btnfont1()">Impact</button>
+        <button id="btn8" onclick="btnfont2()">Arial</button>
+        <button id="btn9" onclick="btnfont3()">Calibri</button>
+
+        <script>
+            function btnRed() {
+                document.getElementById("ptag").style.color = "red";
+            }
+
+            function btnGreen() {
+                document.getElementById("ptag").style.color = "green";
+            }
+
+            function btnBlue() {
+                document.getElementById("ptag").style.color = "blue";
+            }
+
+            function btn10() {
+                document.getElementById("ptag").style.fontSize = "10px";
+            }
+
+            function btn20() {
+                document.getElementById("ptag").style.fontSize = "20px";
+            }
+
+            function btn30() {
+                document.getElementById("ptag").style.fontSize = "30px";
+            }
+
+            function btnfont1() {
+                document.getElementById("ptag").style.fontFamily = "impact"
+            }
+
+            function btnfont2() {
+                document.getElementById("ptag").style.fontFamily = "arial"
+            }
+
+            function btnfont3() {
+                document.getElementById("ptag").style.fontFamily = "Calibri"
+            }
+        </script>
+</body>
+</html>
